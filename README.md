@@ -1,0 +1,1 @@
+<h1>Chrome Extension Boilerplate with React and Webpack </h1>
