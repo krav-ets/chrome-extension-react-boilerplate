@@ -53,9 +53,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'public/popup.html',
-      filename: 'popup.html',
-      excludeChunks: ['background'],
+      template: 'public/index.html',
+      filename: 'index.html',
+      excludeChunks: ['service_worker', 'content'],
     }),
     new CopyWebpackPlugin({
       patterns: [
@@ -63,7 +63,7 @@ module.exports = {
           from: path.resolve(__dirname, 'public'),
           to: path.resolve(__dirname, 'build'),
           globOptions: {
-            ignore: ['**/popup.html'],
+            ignore: ['**/index.html'],
           },
         },
       ],
