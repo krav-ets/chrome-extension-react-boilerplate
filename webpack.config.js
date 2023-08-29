@@ -14,6 +14,9 @@ module.exports = {
     clean: true,
   },
   devtool: 'source-map',
+  devServer: {
+    watchFiles: path.join(__dirname, 'src'),
+  },
   module: {
     rules: [
       {
